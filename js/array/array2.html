@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Exemplo 2</title>
+</head>
+<body>
+    <h3>Array Simples - Exemplo 2</h3>
+    <script>
+        var frutas = ["Maçã", "Pêra", "Abacaxi","Banana","Melancia","Maracujá"]
+        for(var indice=0;indice < frutas.length;indice++){
+        document.write("<font size=+2>" + frutas[indice] + "<br>")
+        }
+            console.table(frutas)
+        document.write("Fim do Processo!!")
+        document.write("<h4> Adicionando item ao array</h4>")
+        var incluir = frutas.push("Laranja")
+        for(var indice=0;indice < frutas.length;indice++){
+        document.write("<font size=+2>" + frutas[indice] + "<br>")
+        }
+        document.write("Fim do Processo!!")
+    </script>
+</body>
+</html>

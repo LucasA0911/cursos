@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de 2 números</title>
+    <style>
+        html{
+            height: 100%;
+            background: linear-gradient(aqua,rgb(98, 0, 128));
+            align-items: center;
+        }
+        body{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            margin-top: 15%;
+            margin-left: 42.5%;
+            box-shadow: 3px solid black;
+            border: 2px black solid
+                    
+        }
+        #button{
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            margin-top: 2%;
+            box-shadow: black;
+            border:1px solid black;
+        }
+        #resultado{
+            margin-top:5%;
+            text-size-adjust: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Soma de 2 números</h3>
+    Numero 1:<input type="number" name="txtNum1" id="txtNum1"><br>
+    Numero 2:<input type="number" name="txtNum2" id="txtNum2">
+    <input type="button" id="button" name="calcular" value="soma" onclick="somar()">
+    <div id="resultado">
+        O resultado da soma é: 
+    </div>
+
+    <script>
+        function somar(){
+       var num1= window.document.getElementById("txtNum1")
+       var num2=window.document.getElementById("txtNum2")
+       var exibeResult=window.document.getElementById("resultado")
+       var n1 = Number(num1.value) // A propriedade value obtem o valor informado na caixa de texto txtNum1
+       var n2 = Number(num2.value)
+       var soma = n1+n2
+       exibeResult.innerHTML = soma
+        }
+    </script>
+</body>
+</html>

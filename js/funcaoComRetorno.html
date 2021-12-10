@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função com retorno</title>
+</head>
+<body>
+    <h1>Função com retorno</h1>
+    <h3>Exibe uma mensagem através da passagem de parâmetros</h3>
+
+    <script>
+        function calculo (n1,n2){
+            return n1+n2;
+        }
+        var num1 = Number(window.prompt("informe o primeiro número: ",""))
+        var num2 = Number(window.prompt("informe o segundo número ",""))
+        var soma = calculo(num1, num2)
+        document.write (soma) // chamando a função ou invocando ela
+
+    </script>
+    <!-- <script src="script/estruturaRept2.js"></script> -->
+</body>
+</html>

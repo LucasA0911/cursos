@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme Favorito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Javascript - DOM</h1>
+    <div id="listarFilme"></div>
+    <br> <p id="text"> <b>Qual o seu filme favorito?</b></p> 
+    <br><input type="text" name="filme" id="box" placeholder="Insira o endereço da imagem"><br>
+    <input type="button" value="Adicionar" name="botao" id="botao" onclick="adicionarFilme()">
+
+    <script>
+        function adicionarFilme(){
+            var campoFilmeFavorito = window.document.getElementById("box").value
+            if(campoFilmeFavorito.endsWith (".jpg") || campoFilmeFavorito.endsWith(".png"))
+            {
+
+            var campoListarFilme="<img src=" + campoFilmeFavorito + " height=280" + ">"
+            var listarFilme = document.getElementById("listarFilme")
+            listarFilme.innerHTML += campoListarFilme
+            }
+            else{
+                alert("Endereço do filme invalido")
+            }
+            document.getElementById("box") = ""
+            document.getElementById("box").focus()
+        }
+    </script>
+
+</body>
+</html>

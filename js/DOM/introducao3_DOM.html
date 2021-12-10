@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM 3</title>
+    <style>
+        body{
+            
+            color: black;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        html{
+            background: linear-gradient(aquamarine,purple);
+            height: 100%;
+        }
+        #mensagem{
+            width: 200px;/*largura em pixel*/
+            height: 100px;/*altura em pixel*/
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 20px solid black;
+            position: absolute;
+            padding-left: 20px;
+            padding-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>INTRODUÇÃO AO DOM NO JAVASCRIPT 3</h3>
+    <p id="paragrafo1">Vamos exibir o <strong>resultado</strong> nesta linha</p>
+    <p>Vai ser inserido a partir de agora o DOM em Javascript</p>
+    <div id="mensagem">
+    insira sua mensagem aqui:    
+    </div>
+    <script>
+     var p1=window.document.getElementById("paragrafo1")
+     var msg=window.document.getElementById("mensagem")//através do getElementeById, é possivel pegar o conteúdo que está no html e aplicar no javascript
+    msg.innerText="Aguarde o processo será iniciado!"
+    </script>
+</body>
+</html>
